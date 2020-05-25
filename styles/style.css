@@ -1,0 +1,123 @@
+/* general */
+html{
+	font-family: 'Roboto', sans-serif;
+	font-size: 62.5%;
+}
+.contenedor{
+	max-width: 120.3rem;
+	margin: 0 auto;
+}
+img {
+	max-width: 100%;
+}
+h1{
+	font-size: 3.8rem;
+}
+h2{
+	font-size: 3.4rem;
+}
+h3{
+	font-size: 3rem;
+}
+h4{
+	font-size: 2.6rem;
+}
+p{
+	font-size: 1.6rem;
+}
+a{
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+}
+/* utilidades */
+.centrar {
+	text-align: center;
+}
+.wu {
+	text-transform: uppercase;
+}
+/* encabezado */
+.head-s{
+	display: flex;
+	height: 10.7rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.options a{
+	font-size: 1.5rem;
+	padding: 0 2.9rem 0 0;
+}
+.options a:hover{
+	color: red;
+}
+.a-body{
+	height: 56rem;
+	background: url(../img/c2-img.jpg)
+}
+.a-body-text{
+	padding: 18.1rem 0;
+	text-align: center;
+	height: 100vh;
+	width: 47.6rem;
+	color:#fff;
+}
+.a-body-text a{
+	color:#FF2424;
+}
+.a-body-text button {
+	padding: 1rem;
+}
+/* servicios */
+.site-servicios{
+	display: flex;
+	justify-content: space-between;
+}
+.servicio {
+	/* flex-basis: calc(33.3%-1rem); */
+	max-width: 33%;
+}
+.b-titulo h1, .b-titulo h3{
+	margin: 0;
+}
+.b-titulo{
+	margin: 1rem 0;
+}
+.servicio p{
+	 	max-width: 100%;
+		font-size: 2.2rem;
+		font-weight: 500;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 0 15.5%;
+}
+.site-servicios p:first-of-type{
+	max-width: 20rem;
+}
+.site-clientes{
+	display: flex;
+}
+.site-clientes img{
+	margin: 0 6.1rem 0 0;
+}
+.site-clientes img:last-of-type{
+	margin: 0rem;
+}
+.foot-p{
+	background-color: #FF1C1C;
+	color: #fff;
+}
+.contacto h4{
+	margin: 0;
+	padding: 0;
+}
+.foot-cont{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.p-contact{
+	display: flex;
+}
