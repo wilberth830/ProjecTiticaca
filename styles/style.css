@@ -104,20 +104,81 @@ a{
 .site-clientes img:last-of-type{
 	margin: 0rem;
 }
+/* parte del footer */
 .foot-p{
 	background-color: #FF1C1C;
 	color: #fff;
+	margin-top: 2rem;
 }
-.contacto h4{
+.foot-p p{
 	margin: 0;
-	padding: 0;
 }
 .foot-cont{
 	display: flex;
 	justify-content: space-between;
-	margin-top: 2rem;
+	padding: 1%;
+}
+.contacto {
+	display: flex;
+	align-items: baseline;
+}
+.img-i{
+	height: 30px;
+	width: 40px;
+}
+.contacto h4,.contacto span{
+	text-transform: uppercase;
+}
+.contacto h4{
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;
 }
 
 .p-contact{
 	display: flex;
+}
+
+.p-contact div{
+	margin-bottom: 6px;
+}
+.redes-sociales {
+	width: 40%;
+}
+.img-rs{
+	margin-top:4%;
+	display: flex;
+	justify-content: space-between;
+}
+/* parte header 2 */
+.header2 {
+	position: relative;
+	display: flex;
+	background-image: url(../img/header2.png);
+	height: 15.3rem;
+}
+.relati {
+	position: absolute;
+}
+.relati.h-img1{
+	top: 40px;
+}
+.h-text {
+	max-width: 120.3rem;
+	display: flex;
+	align-items: center;
+}
+.h-text h1{
+	margin-right:0;
+	margin: 0 10%;
+}
+
+/* contactenos */
+
+.contactenos {
+	background-image: url(../img/contactenos.jpg);
+}
+.contactenos1 {
+	display: flex;
+	justify-content: space-between;
 }
