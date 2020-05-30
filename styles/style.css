@@ -1,6 +1,10 @@
 /* general */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
+	font-family: 'Noto Serif', serif;
+	/* font-family: 'Roboto', sans-serif; */
 	font-size: 62.5%;
 	box-sizing: border-box;
 }
@@ -8,23 +12,23 @@ html{
 	box-sizing: inherit;
 }
 .contenedor{
-	max-width: 120.3rem;
+	max-width: 115rem;
 	margin: 0 auto;
 }
 img {
 	max-width: 100%;
 }
 h1{
-	font-size: 3.8rem;
+   font-size: 3.8rem;
 }
 h2{
-	font-size: 3.4rem;
+   font-size: 3rem;
 }
 h3{
-	font-size: 3rem;
+   font-size: 2.8rem;
 }
 h4{
-	font-size: 2.6rem;
+   font-size: 2.1rem;
 }
 p{
 	font-size: 1.6rem;
@@ -35,12 +39,13 @@ a{
 	text-decoration: none;
 	color: #000;
 }
-/* utilidades */
+/* utilidades -------------------------------*/
 .boton:hover{
 	color: #FF1C1C;
 	border: solid .1rem #FF1C1C;
 }
 .boton{
+	font-family: 'Roboto', sans-serif;
 	background-color: white;
 	font-weight: bold;
 	padding: 0.8rem 3rem;
@@ -55,7 +60,8 @@ a{
 .wu {
 	text-transform: uppercase;
 }
-/* encabezado */
+
+/* encabezado  -------------------------------*/
 .head-s{
 	display: flex;
 	height: 10.7rem;
@@ -63,8 +69,13 @@ a{
 	align-items: center;
 }
 .options a{
-	font-size: 1.5rem;
-	padding: 0 2.9rem 0 0;
+	/* font-size: 2.3rem;
+	padding: 0 2.9rem 0 0; */
+	font-family: fantasy;
+	color: black;
+	text-decoration: none;
+	margin-right: 2rem;
+	font-size: 1.9rem;
 }
 .options a:hover{
 	color: red;
@@ -86,7 +97,7 @@ a{
 .a-body-text button {
 	padding: 1rem;
 }
-/* servicios */
+/* servicios  -------------------------------*/
 .site-servicios{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -119,14 +130,15 @@ a{
 	justify-content: center;
 }
 
-/* parte del footer */
+/* parte pie de pagina -------------------------------*/
 .foot-p{
-	background-color: #FF1C1C;
+	background-color: #5b5b5b;
 	color: #fff;
 	margin-top: 2rem;
 }
 
 .foot-cont{
+	padding: 3.5rem 0 5rem 0 !important;
 	display: flex;
 	justify-content: space-between;
 	padding: 1%;
@@ -136,22 +148,24 @@ a{
 	align-items: baseline;
 }
 .img-i{
-	height: 40px;
-	width: 40px;
+	height: 3rem;
+	width: 3rem;
 }
 .c-text {
 	margin-left: 2rem;
 }
 .c-text h4,.c-text span{
 	text-transform: uppercase;
+	/* font-family: 'Roboto', sans-serif; */
 }
 .c-text h4{
-	margin: 0;
+	margin: 0 0 1rem 0;
 	padding: 0;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 .c-text p{
-	margin: 1rem 0 0 0;
+	margin: 0.5rem 0 0 0;
+	font-family: 'Roboto', sans-serif;
 }
 .p-contact{
 	margin-top: 2rem;
@@ -160,6 +174,11 @@ a{
 }
 .redes-sociales {
 	width: 20%;
+	margin-right: 8rem;
+}
+.redes-sociales img{
+	height: 4rem;
+	width: 4rem;
 }
 .img-rs{
 	margin-top:4%;
@@ -190,8 +209,8 @@ a{
 	margin: 0 10%;
 }
 
-/* contactenos */
 
+/*parte contactenos -------------------------------*/
 .contactenos {
 	background-image: url(../img/contactenos.jpg);
 	height: 567px;
@@ -212,9 +231,12 @@ a{
 	padding-left: 65px;
 }
 .contactenos-redes h1{
+	margin-bottom: 4rem;
 	font-size: 1.8rem;
 }
-
+.pc-hora {
+	padding-left: 3rem;
+}
 .formulario {
 	background-color: rgba(212, 212, 212,0.5);
 	display: flex;
@@ -250,4 +272,86 @@ input, textarea {
 }
 .s-mapa{
 	margin: 3rem 0;
+}
+
+/* parte consultoria  -------------------------------*/
+.consultoria{
+    background-image: url(../img/consultoria1.jpg);
+    background-size:1900px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 150px;
+    display: flex;
+}
+.consultoria h1{
+    margin: 35px;
+    color: black;
+    border-radius: 10px;
+    font-family: fantasy;
+    font-size: 80px;
+    background-color: white;
+    text-decoration: none;
+}
+
+/*SEGUNDO NIVEL "ESTILOS" */
+.ventanaN{
+    max-width: 135rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ventanaN h1{
+    text-align: center;
+}
+.nosotros{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: calc(33.3% - 1rem);
+}
+.iconos{
+
+    border-radius: 1.5rem;
+}
+.iconos h2{
+    max-width: 30rem;
+    text-align: center;
+}
+.iconos img{
+    border-style: unset;
+    border-radius: 15rem;
+}
+/*ARQUITECTURA*/
+.arquitectura{
+    background-image: url(../img/arquitectura2.jpg);
+    background-size:190rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 18rem;
+    display: flex;
+    padding-bottom: 2rem;
+}
+/* CUERPO DE ARQUITECTURA*/
+.arquitectura h1{
+    margin: 2rem;
+    color: black;
+    border-radius: 1rem;
+    font-family: fantasy;
+    font-size: 8rem;
+    background-color: white;
+    text-decoration: none;
+}
+.arquitectura-cuerpo{
+    padding-top: 3rem;
+    max-width: 100rem;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.arquitectura-cuerpo p{
+    font-size: 2rem;
+    max-width: 39rem;
+    text-align: center;
+}
+.arquitectura-cuerpo img{
+    border-radius: 12rem;
 }
