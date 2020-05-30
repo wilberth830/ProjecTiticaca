@@ -2,6 +2,10 @@
 html{
 	font-family: 'Roboto', sans-serif;
 	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*,*::before, *::after{ /*no considera el tam del padding*/
+	box-sizing: inherit;
 }
 .contenedor{
 	max-width: 120.3rem;
@@ -32,6 +36,19 @@ a{
 	color: #000;
 }
 /* utilidades */
+.boton:hover{
+	color: #FF1C1C;
+	border: solid .1rem #FF1C1C;
+}
+.boton{
+	background-color: white;
+	font-weight: bold;
+	padding: 0.8rem 3rem;
+	border: none;
+	font-size: 1.8rem;
+	border-radius: 1rem;
+	color: #5b5b5b;
+}
 .centrar {
 	text-align: center;
 }
@@ -71,48 +88,44 @@ a{
 }
 /* servicios */
 .site-servicios{
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 1%
 }
-.servicio {
-	/* flex-basis: calc(33.3%-1rem); */
-	max-width: 33%;
-}
+
 .b-titulo h1, .b-titulo h3{
 	margin: 0;
 }
 .b-titulo{
 	margin: 1rem 0;
 }
-.servicio p{
-	 	max-width: 100%;
+.servicio span{
 		font-size: 2.2rem;
-		font-weight: 500;
 		text-transform: uppercase;
-		text-align: center;
-		padding: 0 15.5%;
 }
-.site-servicios p:first-of-type{
-	max-width: 20rem;
+.s-text {
+	display: flex;
+	justify-content: center;
+}
+.clientes {
+	margin: 5rem;
 }
 .site-clientes{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.sc-img {
 	display: flex;
+	justify-content: center;
 }
-.site-clientes img{
-	margin: 0 6.1rem 0 0;
-}
-.site-clientes img:last-of-type{
-	margin: 0rem;
-}
+
 /* parte del footer */
 .foot-p{
 	background-color: #FF1C1C;
 	color: #fff;
 	margin-top: 2rem;
 }
-.foot-p p{
-	margin: 0;
-}
+
 .foot-cont{
 	display: flex;
 	justify-content: space-between;
@@ -123,33 +136,37 @@ a{
 	align-items: baseline;
 }
 .img-i{
-	height: 30px;
+	height: 40px;
 	width: 40px;
 }
-.contacto h4,.contacto span{
+.c-text {
+	margin-left: 2rem;
+}
+.c-text h4,.c-text span{
 	text-transform: uppercase;
 }
-.contacto h4{
+.c-text h4{
 	margin: 0;
 	padding: 0;
 	font-size: 2rem;
 }
-
+.c-text p{
+	margin: 1rem 0 0 0;
+}
 .p-contact{
+	margin-top: 2rem;
+	margin-bottom: 6px;
 	display: flex;
 }
-
-.p-contact div{
-	margin-bottom: 6px;
-}
 .redes-sociales {
-	width: 40%;
+	width: 20%;
 }
 .img-rs{
 	margin-top:4%;
 	display: flex;
 	justify-content: space-between;
 }
+
 /* parte header 2 */
 .header2 {
 	position: relative;
@@ -177,8 +194,60 @@ a{
 
 .contactenos {
 	background-image: url(../img/contactenos.jpg);
+	height: 567px;
+	margin-top: 3rem;
+	color: #fff;
+	display: flex;
+	align-items: center;
 }
 .contactenos1 {
+	display: grid;
+	grid-template-columns: 400px 600px;
+	column-gap: 150px;
+}
+.contactenos1.contactenos-redes.p-contact {
+	margin-top: 4rem;
+}
+.contactenos-redes {
+	padding-left: 65px;
+}
+.contactenos-redes h1{
+	font-size: 1.8rem;
+}
+
+.formulario {
+	background-color: rgba(212, 212, 212,0.5);
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	height: 90%;
+}
+.formulario form {
+	flex-basis: 90%;
+	margin: 3rem 0 3rem 0;
+}
+input, textarea {
+	outline: none;
+}
+.formulario input:focus{
+	border:solid .1rem #5b5b5b;
+}
+.input-f {
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	width: 100%;
+	padding: 1rem  2rem;
+	display: block;
+	color: rgba(#5b5b5b, 0.4);
+	border: none;
+	border-radius: 0.5rem;
+}
+.input-f:focus{
+	border: none;
+}
+.formulario textarea {
+	height: 11rem;
+	margin-bottom: 2rem;
+}
+.s-mapa{
+	margin: 3rem 0;
 }
