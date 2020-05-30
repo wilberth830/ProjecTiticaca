@@ -1,0 +1,186 @@
+/* globales */
+html{
+    font-size: 62.5%; /** reset to REMS -62.5%=10 px de 16px **/
+}
+.margen{
+    padding-bottom: 1rem;
+}
+img{
+    max-width: 100%;
+}   
+body
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.6rem;    
+    line-height: 2;
+}
+
+h1{
+   font-size: 3.8rem;
+}
+h2{
+   font-size: 3rem;
+}
+h3{
+   font-size: 2.8rem;
+}
+h4{
+   font-size: 2.1rem;
+}
+/*CONTENEDOR*/
+.contenedorG{
+    max-width: 180rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ventana {
+    padding-top: 1rem;
+    max-width: 160rem;
+    background-color: white;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.navegacion 
+{
+    display: flex; 
+    justify-content: space-between;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
+}
+.navegacion a{
+    font-family: fantasy;
+    color: black;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 2.3rem;
+}
+
+/* CONSULTORIA*/
+.consultoria{
+    background-image: url(../img/consultoria1.jpg);
+    background-size:1900px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 150px;
+    display: flex;
+}
+.consultoria h1{
+    margin: 35px;
+    color: black;
+    border-radius: 10px;
+    font-family: fantasy;
+    font-size: 80px;
+    background-color: white;
+    text-decoration: none;
+}
+/*SEGUNDO NIVEL "ESTILOS" */
+.ventanaN{
+    max-width: 135rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ventanaN h1{
+    text-align: center;
+}
+.nosotros{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: calc(33.3% - 1rem);
+}
+.iconos{
+    
+    border-radius: 1.5rem;
+}
+.iconos h2{
+    max-width: 30rem;
+    text-align: center;
+}
+.iconos img{
+    border-style: unset;
+    border-radius: 15rem;
+}
+/*ARQUITECTURA*/
+.arquitectura{
+    background-image: url(../img/arquitectura2.jpg);
+    background-size:190rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 18rem;
+    display: flex;
+    padding-bottom: 2rem;
+}
+/* CUERPO DE ARQUITECTURA*/
+.arquitectura h1{
+    margin: 2rem;
+    color: black;
+    border-radius: 1rem;
+    font-family: fantasy;
+    font-size: 8rem;
+    background-color: white;
+    text-decoration: none;
+}
+.arquitectura-cuerpo{
+    padding-top: 3rem;
+    max-width: 100rem;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+.arquitectura-cuerpo p{
+    font-size: 2rem;
+    max-width: 39rem;
+    text-align: center;
+}
+.arquitectura-cuerpo img{
+    border-radius: 12rem;
+}
+/*zona inferior*/
+.cuerpobotton{
+    
+    background-color: red;
+    display: flex;
+    align-content: space-between;
+    padding-top: 4rem;
+    min-height:20rem ;
+    
+}
+
+.fondobotton{
+    align-items: center;
+    display: flex;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.cuerpobotton img{
+    width: 7rem;
+    height: 7rem;
+}
+
+
+.logo{
+    
+    display: flex;
+    min-width: 30rem;
+    align-items: center;
+    
+}
+.logo h4{
+    
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+}
+.contenidob{
+    justify-content: space-between;
+    align-items: center;
+    
+}
